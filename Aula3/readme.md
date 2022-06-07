@@ -1,0 +1,1 @@
+--Mesmo codigo da aula 2, porem agora com tratamento de erros
