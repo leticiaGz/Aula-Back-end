@@ -2,5 +2,5 @@
 set NODE_MYSQL_SERVIDOR=127.0.0.1
 set NODE_MYSQL_USUARIO=root
 set NODE_MYSQL_SENHA=p1606O0108?
-set NODE_MYSQL_BD=exemplo
+set NODE_MYSQL_BD=exemplo2
 @echo Variaveis de ambiente ajustadas com sucesso!!

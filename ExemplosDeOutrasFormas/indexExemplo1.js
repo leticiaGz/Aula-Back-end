@@ -1,7 +1,7 @@
 
 // essa nao é a melhor forma de fazer pois deixa a senha explicita
 
-/*let mysqlex=require('mysql2'); // requisita um modulo 
+let mysqlex=require('mysql2'); // requisita um modulo 
 let conexao=mysqlex.createConnection({
     host: '',
     user: '',
@@ -25,5 +25,5 @@ let conexao=mysqlex.createConnection({
     // Segunda maneira de realizar a conexao
     
     // em vez de passar um obj passar direto
-   /* let conexao=mysqlex.createConnection('mysql://usuario:senha@servidor/bd?debug=true&'+
-    'charset=UTF8&timezone=-0300');*/
+    let conexaoo=mysqlex.createConnection('mysql://usuario:senha@servidor/bd?debug=true&'+
+    'charset=UTF8&timezone=-0300');

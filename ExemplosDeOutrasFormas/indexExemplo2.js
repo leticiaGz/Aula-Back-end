@@ -1,9 +1,11 @@
-let mysql=require('mysql2');
-let bdConfig= require('./bdconfig.js'); // requisitando o modulos
+//Melhor forma de utilizar as callback functions, escondendo as infs do usuario
 
-let conexao=mysql.createConnection(bdConfig);
+let mysql=require('mysql2');
+let bdConfig= require('../bdconfig.js'); // requisitando o modulos
+
+let conexao=mysql.createConnection(bdConfig); // retorna a conexao 
 conexao.connect();
-console.log('cheguei aqui');
+
 
 conexao.query('select * from cores',function (error,results,fields) {
     if (error) 
@@ -19,4 +21,4 @@ conexao.query('select * from cores',function (error,results,fields) {
     }
     
 });
-conexao.end();
+conexao.end();// encerra a conexao 
