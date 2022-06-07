@@ -14,7 +14,7 @@ async function inclua(livro) {
 async function atualize (livro) {
 
     const conexao= await bd.getConexao();
-    const sql= 'UPDATE livros SET livros nome=?,preço=? WHERE codigo=?';
+    const sql= 'UPDATE livros SET nome=?,preço=? WHERE codigo=?';
     const dados= [livro.nome,livro.preço,livro.codigo];
 
     

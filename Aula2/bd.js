@@ -17,7 +17,7 @@ async function getConexao() {
 async function estruturese() {
     const conexao= await getConexao(); //Como getConexao é uma funçao async sempre usar await
 
-    const sql = 'CREATE TABLE IF NOT EXISTS livros (codigo TINYINT UNSIGNED, nome VARCHAR(60) NOT NULL, preço FLOAT NOT NULL, PRYMARY KEY (codigo))';
+    const sql = 'CREATE TABLE  livros (codigo TINYINT UNSIGNED, nome VARCHAR(60) NOT NULL, preço FLOAT NOT NULL, PRIMARY KEY (codigo))';
     return await conexao.query(sql); // usando await por conta da promessie
     
 }
