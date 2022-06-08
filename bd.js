@@ -27,7 +27,7 @@ async function estruturese() {
     if (conexao===undefined) {
         return null; // retorna null caso a conexao seja nula
     }
-    const sql = 'CREATE TABLE  livros (codigo TINYINT UNSIGNED, nome VARCHAR(60) NOT NULL, preço FLOAT NOT NULL, PRIMARY KEY (codigo))';
+    const sql = 'CREATE TABLE IF NOT EXISTS livros (codigo TINYINT UNSIGNED, nome VARCHAR(60) NOT NULL, preço FLOAT NOT NULL, PRIMARY KEY (codigo))';
    
     try {
         await conexao.query(sql);
